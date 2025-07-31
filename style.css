@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Wrapper styles */
+.wrapper {
+  width: 400px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  position: relative;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Toggle icon only changes wrapper appearance */
+.wrapper.dark {
+  background: rgba(34, 34, 34, 0.85);
+  color: #f0f0f0;
+}
+
+/* Theme toggle icon */
+.toggle-theme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #555;
+}
+
+.wrapper.dark .toggle-theme {
+  color: #f0f0f0;
+}
+
+header {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+}
+
+textarea:focus {
+  border-color: #675AFE;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.wrapper.dark .buttons button {
+  color: #ddd;
+}
+
+.outer select,
+input[type=range] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button#speak {
+  width: 100%;
+  padding: 12px;
+  background: #675AFE;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button#speak:hover {
+  background: #4534fe;
+}
